@@ -2,22 +2,22 @@ import Image from "next/image";
 
 const techIcons = [
   {
-    src: "/react-icon.png",
+    src: "/images/react-icon.png",
     alt: "React",
     className: "top-10 left-0 md:top-24",
   },
   {
-    src: "/js-icon.png",
+    src: "/images/js-icon.png",
     alt: "JavaScript",
     className: "bottom-12 left-2 md:bottom-32 md:left-8",
   },
   {
-    src: "/next-icon.png",
+    src: "/images/next-icon.png",
     alt: "Next.js",
     className: "top-10 right-0 md:top-28",
   },
   {
-    src: "/aem-icon.webp",
+    src: "/images/aem-icon.webp",
     alt: "AEM",
     className: "bottom-10 right-2 md:bottom-24 md:right-4",
   },
@@ -37,7 +37,7 @@ export default function HeroImage() {
       {/* Profile Card */}
       <div className="relative overflow-hidden rounded-3xl border border-theme bg-[color:var(--card)] p-3 md:p-4 shadow-2xl">
         <Image
-          src="/profile.png"
+          src="/images/profile.png"
           alt="Profile"
           width={420}
           height={520}

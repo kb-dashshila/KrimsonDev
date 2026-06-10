@@ -4,7 +4,7 @@ export const projects = [
     title: "Enterprise Banking Platform",
     description:
       "A comprehensive banking solution with transactions, payments, analytics and RBAC.",
-    image: "/banking-dashboard.jpg",
+    image: "/images/projects/banking-dashboard.jpg",
     category: "BFSI",
     technologies: ["React", "Redux", "Node.js"],
     demoUrl: "#",
@@ -15,7 +15,7 @@ export const projects = [
     title: "Munish Worldwide",
     description:
       "Responsive market expansion services (MES) application with lazy loading images and accessible modal view.",
-    image: "/projects/mn-worldwide.jpg",
+    image: "/images/projects/mn-worldwide.jpg",
     category: "Next.js",
     technologies: ["NextJs", "React", "GraphQL"],
     demoUrl: "#",
@@ -26,7 +26,7 @@ export const projects = [
     title: "Accessible Data Table Component",
     description:
       "Highly accessible and customizable data table component for enterprise applications.",
-    image: "/projects/data-table.jpg",
+    image: "/images/projects/data-table.jpg",
     category: "Accessibility",
     technologies: ["React", "AEM", "Accessibility"],
     demoUrl: "#",
@@ -37,7 +37,7 @@ export const projects = [
     title: "Munish Nutrition",
     description:
       "Responsive nutrition application with lazy loading images and accessible modal view.",
-    image: "/projects/nutrition.jpg",
+    image: "/images/projects/nutrition.jpg",
     category: "React",
     technologies: ["React", "GraphQL"],
     demoUrl: "#",
@@ -48,7 +48,7 @@ export const projects = [
     title: "Dynamic Card Slider with Modal",
     description:
       "Responsive card slider with lazy loading images and accessible modal view.",
-    image: "/card-slider.jpg",
+    image: "/images/projects/card-slider.jpg",
     category: "React",
     technologies: ["React", "AEM", "GraphQL"],
     demoUrl: "#",
