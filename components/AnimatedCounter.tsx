@@ -14,24 +14,13 @@ export default function AnimatedCounter({
 }: AnimatedCounterProps) {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.4,
+    threshold: 0,
   });
 
   return (
     <div ref={ref}>
-      {inView && (
-        <CountUp start={0} end={end} duration={2.5} separator=",">
-          {({ countUpRef }) => (
-            <span
-              ref={countUpRef}
-              className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
-            />
-          )}
-        </CountUp>
-      )}
-      <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-        {suffix}
-      </span>
+      <CountUp start={0} end={inView ? end : 0} duration={2.5} separator="," />
+      <span>{suffix}</span>
     </div>
   );
 }
