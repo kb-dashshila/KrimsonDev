@@ -24,7 +24,10 @@ export default function ProjectsSection() {
   }, [activeTab]);
 
   return (
-    <section className="bg-[color:var(--background)] py-24 px-6 lg:px-12">
+    <section
+      id="projects"
+      className="bg-[color:var(--background)] py-24 px-6 lg:px-12"
+    >
       <div className="mx-auto max-w-7xl rounded-3xl border border-theme bg-[color:var(--card)] p-8 lg:p-12">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
           <div>
