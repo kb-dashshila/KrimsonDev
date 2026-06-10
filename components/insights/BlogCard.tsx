@@ -17,16 +17,18 @@ interface BlogCardProps {
 
 export default function BlogCard({ blogs }: BlogCardProps) {
   return (
-    <div className="rounded-3xl border border-slate-800 bg-slate-950/60 backdrop-blur-md p-8">
+    <div className="rounded-3xl border border-theme bg-[color:var(--card)] backdrop-blur-md p-8">
       <div className="flex justify-between items-center mb-6">
         <div>
-          <p className="text-sm uppercase tracking-wider text-indigo-400">
+          <p className="text-sm uppercase tracking-wider text-indigo-500 dark:text-indigo-400">
             Latest Blogs
           </p>
-          <h2 className="text-3xl font-bold mt-2">Some words I write</h2>
+          <h2 className="text-3xl font-bold mt-2 text-[color:var(--text-primary)]">
+            Some words I write
+          </h2>
         </div>
 
-        <button className="flex items-center gap-2 text-indigo-400 hover:text-indigo-300">
+        <button className="flex items-center gap-2 text-indigo-500 dark:text-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-300">
           View All Blogs
           <ArrowRight size={18} />
         </button>
@@ -36,7 +38,7 @@ export default function BlogCard({ blogs }: BlogCardProps) {
         {blogs.map((blog) => (
           <div
             key={blog.id}
-            className="flex gap-4 border-b border-slate-800 pb-5 last:border-none"
+            className="flex gap-4 border-b border-theme pb-5 last:border-none"
           >
             <div className="relative w-24 h-24 rounded-xl overflow-hidden">
               <Image
@@ -51,12 +53,12 @@ export default function BlogCard({ blogs }: BlogCardProps) {
             <div className="flex-1">
               <Link
                 href={blog.link}
-                className="font-semibold text-lg leading-snug"
+                className="font-semibold text-lg leading-snug text-[color:var(--text-primary)]"
               >
                 {blog.title}
               </Link>
 
-              <p className="text-sm text-slate-400 mt-2">
+              <p className="text-sm text-[color:var(--text-secondary)] mt-2">
                 {blog.date} • {blog.readTime}
               </p>
             </div>

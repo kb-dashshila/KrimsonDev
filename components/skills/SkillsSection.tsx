@@ -26,7 +26,7 @@ import SkillCard from "./SkillCard";
 const skillsData = {
   Frontend: [
     { name: "React", icon: SiReact, color: "#61DAFB" },
-    { name: "Next.js", icon: SiNextdotjs, color: "#FFFFFF" },
+    { name: "Next.js", icon: SiNextdotjs, color: "var(--nextjs-color)" },
     { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
     { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
     { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
@@ -67,15 +67,15 @@ export default function SkillsSection() {
     useState<keyof typeof skillsData>("Frontend");
 
   return (
-    <section className="bg-[#050816] py-20 px-6 lg:px-12">
-      <div className="mx-auto max-w-7xl rounded-3xl border border-slate-800 bg-[#070B1A] p-8 lg:p-12">
+    <section className="bg-[color:var(--background)] py-20 px-6 lg:px-12">
+      <div className="mx-auto max-w-7xl rounded-3xl border border-theme bg-[color:var(--card)] p-8 lg:p-12">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
           <div>
-            <span className="inline-block rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-400">
+            <span className="inline-block rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-500 dark:text-cyan-400">
               MY SKILLS
             </span>
 
-            <h2 className="mt-5 text-4xl font-bold text-white">
+            <h2 className="mt-5 text-4xl font-bold text-[color:var(--text-primary)]">
               Technologies I work with
             </h2>
           </div>

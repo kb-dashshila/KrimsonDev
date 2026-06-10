@@ -11,7 +11,7 @@ interface TimelineProps {
 
 export default function Timeline({ items }: TimelineProps) {
   return (
-    <div className="rounded-3xl border border-slate-800 bg-slate-900/40 p-8 backdrop-blur-sm">
+    <div className="rounded-3xl border border-theme bg-[color:var(--card)] p-8 backdrop-blur-sm">
       <div className="relative">
         <div className="absolute left-[11px] top-0 h-full w-[2px] bg-gradient-to-b from-cyan-400 to-purple-500" />
 

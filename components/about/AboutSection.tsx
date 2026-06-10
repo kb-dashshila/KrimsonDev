@@ -30,7 +30,10 @@ const timelineData = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="bg-[#050816] py-20 px-6 lg:px-12">
+    <section
+      id="about"
+      className="bg-[color:var(--background)] py-20 px-6 lg:px-12"
+    >
       <div className="mx-auto max-w-7xl grid lg:grid-cols-2 gap-12 items-center">
         <AboutContent />
         <Timeline items={timelineData} />

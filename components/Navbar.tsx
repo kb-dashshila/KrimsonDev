@@ -30,7 +30,7 @@ export default function Navbar({ mobile = false }: NavbarProps) {
           <Link
             key={link.name}
             href={link.href}
-            className="text-base font-medium text-gray-300 transition-colors duration-300 hover:text-white"
+            className="text-base font-medium text-[color:var(--text-secondary)] transition-colors duration-300 hover:text-[color:var(--text-primary)]"
           >
             {link.name}
           </Link>
@@ -40,7 +40,7 @@ export default function Navbar({ mobile = false }: NavbarProps) {
       {/* Mobile Menu Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="rounded-md p-2 text-white transition hover:bg-gray-800 lg:hidden"
+        className="rounded-md p-2 text-[color:var(--text-primary)] transition hover:bg-[color:var(--card)] lg:hidden"
         aria-label="Toggle Menu"
       >
         {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -52,14 +52,14 @@ export default function Navbar({ mobile = false }: NavbarProps) {
           isOpen ? "max-h-[500px]" : "max-h-0"
         }`}
       >
-        <div className="border-t border-gray-800 bg-black px-4 py-5 sm:px-6">
+        <div className="border-t border-theme bg-[color:var(--background)] px-4 py-5 sm:px-6">
           <div className="flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="rounded-md px-3 py-3 text-base text-gray-300 transition hover:bg-gray-900 hover:text-white"
+                className="rounded-md px-3 py-3 text-base text-[color:var(--text-secondary)] transition hover:bg-[color:var(--card)] hover:text-[color:var(--text-primary)]"
               >
                 {link.name}
               </Link>

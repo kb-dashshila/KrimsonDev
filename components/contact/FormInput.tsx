@@ -5,7 +5,7 @@ interface FormInputProps {
 
 export default function FormInput({ placeholder, textarea }: FormInputProps) {
   const classes =
-    "w-full rounded-xl border border-slate-700 bg-[#0b1437]/70 px-5 py-4 text-white outline-none transition focus:border-blue-500";
+    "w-full rounded-xl border border-theme bg-[color:var(--input-bg)] px-5 py-4 text-[color:var(--text-primary)] outline-none transition focus:border-[color:var(--primary)]";
 
   if (textarea) {
     return <textarea rows={6} placeholder={placeholder} className={classes} />;

@@ -27,7 +27,7 @@ const stats = [
 export default function StatsSection() {
   return (
     <section className="px-6 pb-16">
-      <div className="mx-auto max-w-7xl rounded-2xl border border-slate-800 bg-[#050B1A]">
+      <div className="mx-auto max-w-7xl rounded-2xl border border-theme bg-[color:var(--card)]">
         <div className="grid grid-cols-2 md:grid-cols-4">
           {stats.map((stat) => (
             <StatCard

@@ -19,7 +19,7 @@ export default function Button({
   const variants =
     variant === "primary"
       ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg"
-      : "bg-transparent text-white border border-slate-700";
+      : "bg-transparent text-[color:var(--text-primary)] border border-theme";
 
   return (
     <button {...rest} className={`${base} ${variants} ${className}`.trim()}>

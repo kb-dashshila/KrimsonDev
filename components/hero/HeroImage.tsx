@@ -35,7 +35,7 @@ export default function HeroImage() {
       <div className="absolute w-[150px] h-[150px] md:w-[220px] md:h-[220px] rounded-full border border-cyan-500/20" />
 
       {/* Profile Card */}
-      <div className="relative overflow-hidden rounded-3xl border border-slate-800 bg-[#0b1220] p-3 md:p-4 shadow-2xl">
+      <div className="relative overflow-hidden rounded-3xl border border-theme bg-[color:var(--card)] p-3 md:p-4 shadow-2xl">
         <Image
           src="/profile.png"
           alt="Profile"
@@ -53,8 +53,8 @@ export default function HeroImage() {
           className={`absolute ${icon.className}
             flex items-center justify-center
             w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20
-            rounded-2xl border border-slate-700
-            bg-slate-900/80 backdrop-blur-md`}
+            rounded-2xl border border-theme
+            bg-panel backdrop-blur-md`}
         >
           <Image
             src={icon.src}

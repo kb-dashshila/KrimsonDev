@@ -32,7 +32,7 @@ export default function SocialLinks() {
             key={index}
             href={social.href}
             target="_blank"
-            className="flex h-14 w-14 items-center justify-center rounded-xl border border-slate-700 bg-[#08111f] text-white transition-all hover:border-purple-500 hover:text-purple-400"
+            className="flex h-14 w-14 items-center justify-center rounded-xl border border-theme bg-[color:var(--card)] text-[color:var(--text-primary)] transition-all hover:border-purple-500 hover:text-purple-500 dark:hover:text-purple-400"
           >
             <Icon size={22} />
           </Link>

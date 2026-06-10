@@ -10,7 +10,7 @@ type InputProps = React.InputHTMLAttributes<HTMLInputElement> & {
 const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement, InputProps>(
   ({ textarea, className = "", ...rest }, ref) => {
     const classes =
-      "w-full rounded-xl border border-slate-700 bg-[#0b1437]/70 px-5 py-4 text-white outline-none transition focus:border-blue-500 " +
+      "w-full rounded-xl border border-theme bg-[color:var(--input-bg)] px-5 py-4 text-[color:var(--text-primary)] outline-none transition focus:border-[color:var(--primary)] " +
       className;
 
     if (textarea) {
