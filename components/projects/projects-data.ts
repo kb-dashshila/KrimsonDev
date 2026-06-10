@@ -1,10 +1,12 @@
+const basePath = "/KrimsonDev";
+
 export const projects = [
   {
     id: 1,
     title: "Enterprise Banking Platform",
     description:
       "A comprehensive banking solution with transactions, payments, analytics and RBAC.",
-    image: "/images/projects/banking-dashboard.jpg",
+    image: `${basePath}/images/projects/banking-dashboard.jpg`,
     category: "BFSI",
     technologies: ["React", "Redux", "Node.js"],
     demoUrl: "#",
@@ -15,7 +17,7 @@ export const projects = [
     title: "Munish Worldwide",
     description:
       "Responsive market expansion services (MES) application with lazy loading images and accessible modal view.",
-    image: "/images/projects/mn-worldwide.jpg",
+    image: `${basePath}/images/projects/mn-worldwide.jpg`,
     category: "Next.js",
     technologies: ["NextJs", "React", "GraphQL"],
     demoUrl: "#",
@@ -26,7 +28,7 @@ export const projects = [
     title: "Accessible Data Table Component",
     description:
       "Highly accessible and customizable data table component for enterprise applications.",
-    image: "/images/projects/data-table.jpg",
+    image: `${basePath}/images/projects/data-table.jpg`,
     category: "Accessibility",
     technologies: ["React", "AEM", "Accessibility"],
     demoUrl: "#",
@@ -37,7 +39,7 @@ export const projects = [
     title: "Munish Nutrition",
     description:
       "Responsive nutrition application with lazy loading images and accessible modal view.",
-    image: "/images/projects/nutrition.jpg",
+    image: `${basePath}/images/projects/nutrition.jpg`,
     category: "React",
     technologies: ["React", "GraphQL"],
     demoUrl: "#",
@@ -48,7 +50,7 @@ export const projects = [
     title: "Dynamic Card Slider with Modal",
     description:
       "Responsive card slider with lazy loading images and accessible modal view.",
-    image: "/images/projects/card-slider.jpg",
+    image: `${basePath}/images/projects/card-slider.jpg`,
     category: "React",
     technologies: ["React", "AEM", "GraphQL"],
     demoUrl: "#",

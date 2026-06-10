@@ -1,23 +1,25 @@
 import Image from "next/image";
 
+const basePath = "/KrimsonDev";
+
 const techIcons = [
   {
-    src: "/images/react-icon.png",
+    src: "${basePath}/images/react-icon.png",
     alt: "React",
     className: "top-10 left-0 md:top-24",
   },
   {
-    src: "/images/js-icon.png",
+    src: "${basePath}/images/js-icon.png",
     alt: "JavaScript",
     className: "bottom-12 left-2 md:bottom-32 md:left-8",
   },
   {
-    src: "/images/next-icon.png",
+    src: "${basePath}/images/next-icon.png",
     alt: "Next.js",
     className: "top-10 right-0 md:top-28",
   },
   {
-    src: "/images/aem-icon.webp",
+    src: "${basePath}/images/aem-icon.webp",
     alt: "AEM",
     className: "bottom-10 right-2 md:bottom-24 md:right-4",
   },
@@ -37,7 +39,7 @@ export default function HeroImage() {
       {/* Profile Card */}
       <div className="relative overflow-hidden rounded-3xl border border-theme bg-[color:var(--card)] p-3 md:p-4 shadow-2xl">
         <Image
-          src="/images/profile.png"
+          src={`${basePath}/images/profile.png`}
           alt="Profile"
           width={420}
           height={520}
