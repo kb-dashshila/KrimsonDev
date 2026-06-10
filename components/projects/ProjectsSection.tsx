@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import ProjectTabs from "./ProjectTabs";
 import ProjectCard from "./ProjectCard";
 import { projects } from "./projects-data";
+import ProjectsSlider from "./ProjectsSlider";
 
 const tabs = ["All", "React", "Next.js", "AEM", "Accessibility", "BFSI"];
 
@@ -50,10 +51,8 @@ export default function ProjectsSection() {
           />
         </div>
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-3">
-          {filteredProjects.map((project) => (
-            <ProjectCard key={project.id} {...project} />
-          ))}
+        <div className="mt-12">
+          <ProjectsSlider projects={filteredProjects} />
         </div>
       </div>
     </section>
