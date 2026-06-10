@@ -3,7 +3,7 @@ import Timeline from "./Timeline";
 
 const timelineData = [
   {
-    year: "2020",
+    year: "2018",
     title: "Started my journey as a Frontend Developer",
   },
   {

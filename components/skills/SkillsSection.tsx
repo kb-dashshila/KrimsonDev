@@ -43,11 +43,6 @@ const skillsData = {
     { name: "Content Fragments", icon: BiLogoAdobe, color: "#FF0000" },
   ],
 
-  Performance: [
-    { name: "Lighthouse", icon: SiLighthouse, color: "#F44B21" },
-    { name: "Core Web Vitals", icon: SiGooglechrome, color: "#4285F4" },
-  ],
-
   Accessibility: [
     { name: "WCAG", icon: SiGooglechrome, color: "#4285F4" },
     { name: "ARIA", icon: SiGooglechrome, color: "#4285F4" },
@@ -57,6 +52,11 @@ const skillsData = {
     { name: "Git", icon: SiGit, color: "#F05032" },
     { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
     { name: "Storybook", icon: SiStorybook, color: "#FF4785" },
+  ],
+
+  Performance: [
+    { name: "Lighthouse", icon: SiLighthouse, color: "#F44B21" },
+    { name: "Core Web Vitals", icon: SiGooglechrome, color: "#4285F4" },
   ],
 };
 

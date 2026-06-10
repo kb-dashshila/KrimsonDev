@@ -17,10 +17,11 @@ export default function HeroSection() {
                 5+ YEARS OF EXPERIENCE
               </div>
 
-              <h1 className="mb-6 text-5xl font-bold leading-tight text-white lg:text-7xl">
-                Hi, I&apos;m{" "}
-                <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                  Kumkum
+              <h1 className="mb-6 text-4xl font-bold leading-tight text-white lg:text-5xl">
+                Hi,
+                <span className="">I&apos;m </span>
+                <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent lg:text-6xl">
+                  Kumkum Bala
                 </span>
               </h1>
 

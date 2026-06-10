@@ -1,25 +1,23 @@
 import { Send } from "lucide-react";
-import FormInput from "./FormInput";
+import Input from "../ui/Input";
+import Button from "../ui/Button";
 
 export default function ContactForm() {
   return (
     <form className="space-y-5">
       <div className="grid md:grid-cols-2 gap-5">
-        <FormInput placeholder="Your Name" />
-        <FormInput placeholder="Your Email" />
+        <Input placeholder="Your Name" name="name" />
+        <Input placeholder="Your Email" name="email" type="email" />
       </div>
 
-      <FormInput placeholder="Subject" />
+      <Input placeholder="Subject" name="subject" />
 
-      <FormInput placeholder="Your Message" textarea />
+      <Input placeholder="Your Message" textarea name="message" />
 
-      <button
-        type="submit"
-        className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-4 text-lg font-semibold text-white transition hover:scale-105"
-      >
+      <Button type="submit" className="px-8 py-4 text-lg">
         Send Message
         <Send size={20} />
-      </button>
+      </Button>
     </form>
   );
 }

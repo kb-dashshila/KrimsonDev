@@ -18,18 +18,18 @@ export default function ContactInfo() {
         <div className="mt-10 space-y-8">
           <div className="flex items-center gap-4">
             <Mail className="h-6 w-6 text-blue-400" />
-            <span className="text-lg text-slate-300">kumkumbala@email.com</span>
+            <span className="text-lg text-slate-300">kumkumbala@yahoo.com</span>
           </div>
 
           <div className="flex items-center gap-4">
             <MapPin className="h-6 w-6 text-blue-400" />
-            <span className="text-lg text-slate-300">India</span>
+            <span className="text-lg text-slate-300">Mumbai, India</span>
           </div>
 
           <div className="flex items-center gap-4">
             <FaLinkedin className="h-6 w-6 text-blue-400" />
             <span className="text-lg text-slate-300">
-              linkedin.com/in/kumkumbala
+              https://www.linkedin.com/in/kumkum-r-89bb40246/
             </span>
           </div>
         </div>

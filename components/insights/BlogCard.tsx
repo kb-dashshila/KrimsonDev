@@ -43,6 +43,7 @@ export default function BlogCard({ blogs }: BlogCardProps) {
                 src={blog.image}
                 alt={blog.title}
                 fill
+                sizes="(max-width: 768px) 100vw, 150px"
                 className="object-cover"
               />
             </div>
