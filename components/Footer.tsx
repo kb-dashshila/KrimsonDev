@@ -6,27 +6,27 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#050816] px-6 py-8 md:px-10">
-      <div className="mx-auto max-w-7xl rounded-3xl border border-[#1a2238] bg-[#060b1a] p-8 md:p-12">
+    <footer className="bg-[color:var(--background)] px-6 py-8 md:px-10">
+      <div className="mx-auto max-w-7xl rounded-3xl border border-theme bg-[color:var(--card)] p-8 md:p-12">
         <div className="grid gap-10 md:grid-cols-4">
           {/* Brand */}
           <div>
-            <h2 className="mb-5 text-5xl font-bold tracking-tight text-blue-500">
-              KB<span className="text-purple-500">.</span>
+            <h2 className="mb-5 text-5xl font-bold tracking-tight text-[color:var(--primary)]">
+              KB<span className="text-[color:var(--secondary)]">.</span>
             </h2>
 
-            <p className="max-w-xs text-base leading-7 text-gray-400">
+            <p className="max-w-xs text-base leading-7 text-[color:var(--text-secondary)]">
               Frontend Engineer specialized in React, Next.js and AEM.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="mb-5 text-lg font-semibold text-white">
+            <h3 className="mb-5 text-lg font-semibold text-[color:var(--text-primary)]">
               Quick Links
             </h3>
 
-            <ul className="space-y-3 text-gray-400">
+            <ul className="space-y-3 text-[color:var(--text-secondary)]">
               <li>
                 <Link href="/" className="transition hover:text-white">
                   Home
@@ -65,11 +65,11 @@ const Footer = () => {
 
           {/* Technologies */}
           <div>
-            <h3 className="mb-5 text-lg font-semibold text-white">
+            <h3 className="mb-5 text-lg font-semibold text-[color:var(--text-primary)]">
               Technologies
             </h3>
 
-            <div className="grid grid-cols-2 gap-y-3 text-gray-400">
+            <div className="grid grid-cols-2 gap-y-3 text-[color:var(--text-secondary)]">
               <Link href="https://react.dev/" target="_blank">
                 React
               </Link>
@@ -96,7 +96,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div>
-            <h3 className="mb-5 text-lg font-semibold text-white">
+            <h3 className="mb-5 text-lg font-semibold text-[color:var(--text-primary)]">
               Let&apos;s Connect
             </h3>
 
@@ -104,7 +104,7 @@ const Footer = () => {
               <Link
                 href="https://linkedin.com"
                 target="_blank"
-                className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#1f2937] text-white transition hover:border-blue-500 hover:text-blue-500"
+                className="flex h-12 w-12 items-center justify-center rounded-xl border border-theme text-[color:var(--text-primary)] transition hover:border-blue-500 hover:text-blue-500"
               >
                 <FaLinkedinIn size={20} />
               </Link>
@@ -112,14 +112,14 @@ const Footer = () => {
               <Link
                 href="https://github.com"
                 target="_blank"
-                className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#1f2937] text-white transition hover:border-white"
+                className="flex h-12 w-12 items-center justify-center rounded-xl border border-theme text-[color:var(--text-primary)] transition hover:border-white"
               >
                 <FaGithub size={20} />
               </Link>
 
               <Link
                 href="mailto:kumkumbala@yahoo.com"
-                className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#1f2937] text-white transition hover:border-purple-500 hover:text-purple-500"
+                className="flex h-12 w-12 items-center justify-center rounded-xl border border-theme text-[color:var(--text-primary)] transition hover:border-purple-500 hover:text-purple-500"
               >
                 <FaEnvelope size={20} />
               </Link>
@@ -127,7 +127,7 @@ const Footer = () => {
               <Link
                 href="https://x.com"
                 target="_blank"
-                className="flex h-12 w-12 items-center justify-center rounded-xl border border-[#1f2937] text-white transition hover:border-white"
+                className="flex h-12 w-12 items-center justify-center rounded-xl border border-theme text-[color:var(--text-primary)] transition hover:border-white"
               >
                 <RiTwitterXFill size={20} />
               </Link>
@@ -136,12 +136,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-[#1a2238] pt-6 text-sm text-gray-400 md:flex-row">
-          <p>© {currentYear} Kumkum Bala. All rights reserved.</p>
+        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-theme pt-6 text-sm text-[color:var(--text-secondary)] md:flex-row">
+          <p>© {currentYear} KB. All rights reserved.</p>
 
           <Link
             href="#top"
-            className="flex items-center gap-2 transition hover:text-white"
+            className="flex items-center gap-2 transition text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)]"
           >
             Back to top
             <FaArrowUp size={12} />

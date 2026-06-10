@@ -4,7 +4,7 @@ export const projects = [
     title: "Enterprise Banking Platform",
     description:
       "A comprehensive banking solution with transactions, payments, analytics and RBAC.",
-    image: "/projects/banking-dashboard.jpg",
+    image: "/banking-dashboard.jpg",
     category: "BFSI",
     technologies: ["React", "Redux", "Node.js"],
     demoUrl: "#",
@@ -48,7 +48,7 @@ export const projects = [
     title: "Dynamic Card Slider with Modal",
     description:
       "Responsive card slider with lazy loading images and accessible modal view.",
-    image: "/projects/card-slider.jpg",
+    image: "/card-slider.jpg",
     category: "React",
     technologies: ["React", "AEM", "GraphQL"],
     demoUrl: "#",

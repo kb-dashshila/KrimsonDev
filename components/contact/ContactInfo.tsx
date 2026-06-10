@@ -5,11 +5,11 @@ export default function ContactInfo() {
   return (
     <div className="flex flex-col justify-between">
       <div>
-        <span className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-sm font-medium text-blue-400">
+        <span className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-sm font-medium text-blue-500 dark:text-blue-400">
           CONTACT ME
         </span>
 
-        <h2 className="mt-6 text-4xl md:text-5xl font-bold text-white leading-tight">
+        <h2 className="mt-6 text-4xl md:text-5xl font-bold text-[color:var(--text-primary)] leading-tight">
           Let's build something
           <br />
           great together
@@ -17,19 +17,23 @@ export default function ContactInfo() {
 
         <div className="mt-10 space-y-8">
           <div className="flex items-center gap-4">
-            <Mail className="h-6 w-6 text-blue-400" />
-            <span className="text-lg text-slate-300">kumkumbala@email.com</span>
+            <Mail className="h-6 w-6 text-blue-500 dark:text-blue-400" />
+            <span className="text-lg text-[color:var(--text-secondary)]">
+              kumkumbala@yahoo.com
+            </span>
           </div>
 
           <div className="flex items-center gap-4">
-            <MapPin className="h-6 w-6 text-blue-400" />
-            <span className="text-lg text-slate-300">India</span>
+            <MapPin className="h-6 w-6 text-blue-500 dark:text-blue-400" />
+            <span className="text-lg text-[color:var(--text-secondary)]">
+              Mumbai, India
+            </span>
           </div>
 
           <div className="flex items-center gap-4">
-            <FaLinkedin className="h-6 w-6 text-blue-400" />
-            <span className="text-lg text-slate-300">
-              linkedin.com/in/kumkumbala
+            <FaLinkedin className="h-6 w-6 text-blue-500 dark:text-blue-400" />
+            <span className="text-lg text-[color:var(--text-secondary)]">
+              https://www.linkedin.com/in/kumkum-r-89bb40246/
             </span>
           </div>
         </div>

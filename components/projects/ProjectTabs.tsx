@@ -19,7 +19,7 @@ export default function ProjectTabs({
           ${
             activeTab === tab
               ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg"
-              : "bg-slate-900 text-slate-300 hover:bg-slate-800"
+              : "bg-[color:var(--card)] text-[color:var(--text-secondary)] hover:bg-[color:var(--surface)]"
           }`}
         >
           {tab}

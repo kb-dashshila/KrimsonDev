@@ -18,7 +18,7 @@ export default function StatCard({
   return (
     <div
       className={`flex flex-col items-center justify-center px-8 py-6 ${
-        !highlight ? "border-r border-slate-800" : ""
+        !highlight ? "border-r border-theme" : ""
       }`}
     >
       <div className="flex items-center gap-3">
@@ -33,7 +33,7 @@ export default function StatCard({
         </h3>
       </div>
 
-      <p className="mt-2 text-sm text-slate-400">{label}</p>
+      <p className="mt-2 text-sm text-[color:var(--text-secondary)]">{label}</p>
     </div>
   );
 }
