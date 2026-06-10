@@ -1,5 +1,6 @@
 import BlogCard from "./BlogCard";
 import GithubActivityCard from "./GithubActivityCard";
+const basePath = "/KrimsonDev";
 
 const blogs = [
   {
@@ -7,7 +8,7 @@ const blogs = [
     title: "How to optimize performance in React Applications",
     date: "May 20, 2024",
     readTime: "6 min read",
-    image: "/blogs/react-performance.jpg",
+    image: `${basePath}/images/blogs/react-performance.jpg`,
     link: "google.com",
   },
   {
@@ -15,7 +16,7 @@ const blogs = [
     title: "AEM Dispatcher Caching Deep Dive",
     date: "Apr 12, 2024",
     readTime: "8 min read",
-    image: "/blogs/aem.jpg",
+    image: `${basePath}/images/blogs/aem.jpg`,
     link: "google.com",
   },
   {
@@ -23,7 +24,7 @@ const blogs = [
     title: "Accessibility Best Practices for Web Developers",
     date: "Mar 28, 2024",
     readTime: "5 min read",
-    image: "/blogs/accessibility.jpg",
+    image: `${basePath}/images/blogs/accessibility.jpg`,
     link: "google.com",
   },
 ];
