@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: "/KrimsonDev",
+  assetPrefix: "/KrimsonDev/",
 };
 
 export default nextConfig;
