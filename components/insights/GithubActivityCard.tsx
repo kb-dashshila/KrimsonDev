@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import StatCard from "./StatCard";
+import Link from "next/link";
 
 export default function GithubActivityCard() {
   return (
@@ -14,10 +15,14 @@ export default function GithubActivityCard() {
           </h2>
         </div>
 
-        <button className="flex items-center gap-2 text-indigo-500 dark:text-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-300">
+        <Link
+          href="https://github.com/kb-dashshila"
+          target="_blank"
+          className="flex items-center gap-2 text-indigo-500 dark:text-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-300"
+        >
           View GitHub Profile
           <ArrowRight size={18} />
-        </button>
+        </Link>
       </div>
 
       {/* Contribution Graph Placeholder */}

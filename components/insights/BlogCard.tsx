@@ -28,10 +28,13 @@ export default function BlogCard({ blogs }: BlogCardProps) {
           </h2>
         </div>
 
-        <button className="flex items-center gap-2 text-indigo-500 dark:text-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-300">
+        <Link
+          href="/"
+          className="flex items-center gap-2 text-indigo-500 dark:text-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-300"
+        >
           View All Blogs
           <ArrowRight size={18} />
-        </button>
+        </Link>
       </div>
 
       <div className="space-y-5">

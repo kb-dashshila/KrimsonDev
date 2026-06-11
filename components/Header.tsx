@@ -46,7 +46,8 @@ export default function Header() {
           href="/"
           className="text-xl font-bold tracking-tight text-[color:var(--text-primary)] lg:text-2xl"
         >
-          K<span className="text-[color:var(--primary)]">B.</span>
+          K<span className="text-[color:var(--primary)]">B</span>
+          <span className="text-[color:var(--alert)]">.</span>
         </Link>
 
         {/* Desktop / Tablet Navbar */}

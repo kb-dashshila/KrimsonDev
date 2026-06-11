@@ -11,8 +11,9 @@ const Footer = () => {
         <div className="grid gap-10 md:grid-cols-4">
           {/* Brand */}
           <div>
-            <h2 className="mb-5 text-5xl font-bold tracking-tight text-[color:var(--primary)]">
-              KB<span className="text-[color:var(--secondary)]">.</span>
+            <h2 className="mb-5 text-5xl font-bold tracking-tight text-[color:var(--text-primary)] ">
+              K<span className="text-[color:var(--primary)]">B</span>
+              <span className="text-[color:var(--alert)] ">.</span>
             </h2>
 
             <p className="max-w-xs text-base leading-7 text-[color:var(--text-secondary)]">
@@ -139,13 +140,13 @@ const Footer = () => {
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-theme pt-6 text-sm text-[color:var(--text-secondary)] md:flex-row">
           <p>© {currentYear} KB. All rights reserved.</p>
 
-          <Link
+          {/* <Link
             href="#top"
             className="flex items-center gap-2 transition text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)]"
           >
             Back to top
             <FaArrowUp size={12} />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </footer>
