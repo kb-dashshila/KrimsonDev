@@ -19,7 +19,7 @@ export default function ContactInfo() {
           <div className="flex items-center gap-4">
             <Mail className="h-6 w-6 text-blue-500 dark:text-blue-400" />
             <span className="text-lg text-[color:var(--text-secondary)]">
-              kbdashshila@gmail.com
+              kumkumbala@yahoo.com
             </span>
           </div>
 
