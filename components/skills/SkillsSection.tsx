@@ -15,6 +15,11 @@ import {
   SiStorybook,
   SiGit,
   SiGithub,
+  SiWebpack,
+  SiBabel,
+  SiJenkins,
+  SiNpm,
+  SiFigma,
 } from "react-icons/si";
 // import { FaAdobe } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa6";
@@ -37,21 +42,35 @@ const skillsData = {
   ],
 
   AEM: [
-    { name: "AEM Sites", icon: BiLogoAdobe, color: "#FF0000" },
+    { name: "AEM ClientLibraries", icon: BiLogoAdobe, color: "#FF0000" },
     { name: "AEM Components", icon: BiLogoAdobe, color: "#FF0000" },
-    { name: "AEM Templates", icon: BiLogoAdobe, color: "#FF0000" },
+    { name: "AEM EditableTemplates", icon: BiLogoAdobe, color: "#FF0000" },
     { name: "Content Fragments", icon: BiLogoAdobe, color: "#FF0000" },
+    { name: "Experience Fragments", icon: BiLogoAdobe, color: "#FF0000" },
+    { name: "AEM Assets", icon: BiLogoAdobe, color: "#FF0000" },
+    { name: "AEM Dispatcher", icon: BiLogoAdobe, color: "#FF0000" },
+    { name: "Sightly/HTL", icon: BiLogoAdobe, color: "#FF0000" },
   ],
 
   Accessibility: [
     { name: "WCAG", icon: SiGooglechrome, color: "#4285F4" },
     { name: "ARIA", icon: SiGooglechrome, color: "#4285F4" },
+    { name: "Screen Readers", icon: SiGooglechrome, color: "#4285F4" },
+    { name: "Keyboard Navigation", icon: SiGooglechrome, color: "#4285F4" },
+    { name: "Color Contrast", icon: SiGooglechrome, color: "#4285F4" },
+    { name: "Semantic HTML", icon: SiGooglechrome, color: "#4285F4" },
+    { name: "Accessibility Testing", icon: SiGooglechrome, color: "#4285F4" },
   ],
 
   Tools: [
     { name: "Git", icon: SiGit, color: "#F05032" },
     { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
     { name: "Storybook", icon: SiStorybook, color: "#FF4785" },
+    { name: "Webpack", icon: SiWebpack, color: "#11B5E4" },
+    { name: "Babel", icon: SiBabel, color: "#F38020" },
+    { name: "Jenkins", icon: SiJenkins, color: "#D24939" },
+    { name: "NPM", icon: SiNpm, color: "#CB3837" },
+    { name: "Figma", icon: SiFigma, color: "#F24E1E" },
   ],
 
   Performance: [

@@ -7,6 +7,7 @@ import ProjectTabs from "./ProjectTabs";
 import ProjectCard from "./ProjectCard";
 import { projects } from "./projects-data";
 import ProjectsSlider from "./ProjectsSlider";
+import Link from "next/link";
 
 const tabs = ["All", "React", "Next.js", "AEM", "Accessibility", "BFSI"];
 
@@ -40,10 +41,13 @@ export default function ProjectsSection() {
             </h2>
           </div>
 
-          <button className="flex items-center gap-2 rounded-xl border border-theme px-6 py-3 text-[color:var(--text-primary)] hover:border-blue-500">
+          <Link
+            href="#projects"
+            className="flex items-center gap-2 rounded-xl border border-theme px-6 py-3 text-[color:var(--text-primary)] hover:border-blue-500"
+          >
             View All Projects
             <ArrowRight size={18} />
-          </button>
+          </Link>
         </div>
 
         <div className="mt-10">
