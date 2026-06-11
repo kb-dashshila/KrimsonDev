@@ -118,7 +118,7 @@ const Footer = () => {
               </Link>
 
               <Link
-                href="mailto:kumkumbala@yahoo.com"
+                href="mailto:kbdashshila@gmail.com"
                 className="flex h-12 w-12 items-center justify-center rounded-xl border border-theme text-[color:var(--text-primary)] transition hover:border-purple-500 hover:text-purple-500"
               >
                 <FaEnvelope size={20} />

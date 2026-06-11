@@ -5,6 +5,7 @@ import SkillsSection from "@/components/skills/SkillsSection";
 import ProjectsSection from "@/components/projects/ProjectsSection";
 import InsightsSection from "@/components/insights/InsightsSection";
 import ContactSection from "@/components/contact/ContactSection";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
       <ProjectsSection />
       <InsightsSection />
       <ContactSection />
+
+      <ScrollToTop />
     </>
   );
 }
