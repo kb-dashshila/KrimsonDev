@@ -26,6 +26,9 @@ const techIcons = [
 ];
 
 export default function HeroImage() {
+  const handleContextMenu = (e: React.MouseEvent) => {
+    e.preventDefault();
+  };
   return (
     <div className="relative flex justify-center items-center">
       {/* Glow */}
@@ -37,15 +40,21 @@ export default function HeroImage() {
       <div className="absolute w-[150px] h-[150px] md:w-[220px] md:h-[220px] rounded-full border border-cyan-500/20" />
 
       {/* Profile Card */}
-      <div className="relative overflow-hidden rounded-3xl border border-theme bg-[color:var(--card)] p-3 md:p-4 shadow-2xl">
+      <div
+        className="relative overflow-hidden rounded-3xl border border-theme bg-[color:var(--card)] p-3 md:p-4 shadow-2xl select-none"
+        onContextMenu={handleContextMenu}
+      >
         <Image
           src={`${basePath}/images/profile.png`}
           alt="Profile"
           width={420}
           height={520}
           priority
-          className="w-[250px] sm:w-[300px] md:w-[420px] h-auto rounded-2xl object-cover"
+          draggable={false}
+          className="w-[250px] sm:w-[300px] md:w-[420px] h-auto rounded-2xl object-cover pointer-events-none select-none"
         />
+
+        <div className="absolute inset-0 z-10 w-full h-full bg-transparent cursor-default" />
       </div>
 
       {/* Floating Icons */}

@@ -1,6 +1,7 @@
 import AboutContent from "./AboutContent";
 import Timeline from "./Timeline";
 
+import SlideFromTop from "@/components/SlideFromTop";
 const timelineData = [
   {
     year: "2018",
@@ -34,10 +35,10 @@ export default function AboutSection() {
       id="about"
       className="bg-[color:var(--background)] py-20 px-6 lg:px-12"
     >
-      <div className="mx-auto max-w-7xl grid lg:grid-cols-2 gap-12 items-center">
+      <SlideFromTop className="mx-auto max-w-7xl grid lg:grid-cols-2 gap-12 items-center">
         <AboutContent />
         <Timeline items={timelineData} />
-      </div>
+      </SlideFromTop>
     </section>
   );
 }
