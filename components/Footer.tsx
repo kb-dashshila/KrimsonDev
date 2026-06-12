@@ -34,30 +34,30 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="transition hover:text-white">
+                <Link href="#about" className="transition hover:text-white">
                   About
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/experience"
+                  href="#experience"
                   className="transition hover:text-white"
                 >
                   Experience
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="transition hover:text-white">
+                <Link href="#projects" className="transition hover:text-white">
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="transition hover:text-white">
+                <Link href="#blog" className="transition hover:text-white">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="transition hover:text-white">
+                <Link href="#contact" className="transition hover:text-white">
                   Contact
                 </Link>
               </li>
@@ -139,14 +139,6 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-theme pt-6 text-sm text-[color:var(--text-secondary)] md:flex-row">
           <p>© {currentYear} KB. All rights reserved.</p>
-
-          {/* <Link
-            href="#top"
-            className="flex items-center gap-2 transition text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)]"
-          >
-            Back to top
-            <FaArrowUp size={12} />
-          </Link> */}
         </div>
       </div>
     </footer>

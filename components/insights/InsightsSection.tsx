@@ -1,3 +1,4 @@
+import SlideFromTop from "@/components/SlideFromTop";
 import BlogCard from "./BlogCard";
 import GithubActivityCard from "./GithubActivityCard";
 const basePath = "/KrimsonDev";
@@ -32,10 +33,10 @@ const blogs = [
 export default function InsightsSection() {
   return (
     <section className="py-20 px-6">
-      <div className="max-w-7xl mx-auto grid gap-8 lg:grid-cols-2">
+      <SlideFromTop className="max-w-7xl mx-auto grid gap-8 lg:grid-cols-2">
         <BlogCard blogs={blogs} />
         <GithubActivityCard />
-      </div>
+      </SlideFromTop>
     </section>
   );
 }
