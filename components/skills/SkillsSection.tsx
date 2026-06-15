@@ -71,9 +71,6 @@ const skillsData = {
     { name: "Jenkins", icon: SiJenkins, color: "#D24939" },
     { name: "NPM", icon: SiNpm, color: "#CB3837" },
     { name: "Figma", icon: SiFigma, color: "#F24E1E" },
-  ],
-
-  Performance: [
     { name: "Lighthouse", icon: SiLighthouse, color: "#F44B21" },
     { name: "Core Web Vitals", icon: SiGooglechrome, color: "#4285F4" },
   ],
@@ -109,15 +106,23 @@ export default function SkillsSection() {
           />
         </div>
 
-        <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-9 gap-6">
-          {skillsData[activeTab].map((skill) => (
-            <SkillCard
-              key={skill.name}
-              name={skill.name}
-              icon={skill.icon}
-              color={skill.color}
-            />
-          ))}
+        <div className="relative mt-12 overflow-hidden">
+          <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-[color:var(--card)] to-transparent" />
+
+          <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-[color:var(--card)] to-transparent" />
+
+          <div className="flex gap-6 w-max animate-skills-marquee">
+            {[...skillsData[activeTab], ...skillsData[activeTab]].map(
+              (skill, index) => (
+                <SkillCard
+                  key={`${skill.name}-${index}`}
+                  name={skill.name}
+                  icon={skill.icon}
+                  color={skill.color}
+                />
+              ),
+            )}
+          </div>
         </div>
       </div>
     </section>

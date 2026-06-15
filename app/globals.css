@@ -96,3 +96,22 @@ body {
   border-color: var(--input-border) !important;
   color: var(--text-primary) !important;
 }
+
+@keyframes skills-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-skills-marquee {
+  animation: skills-marquee 25s linear infinite;
+  will-change: transform;
+}
+
+.animate-skills-marquee:hover {
+  animation-play-state: paused;
+}
