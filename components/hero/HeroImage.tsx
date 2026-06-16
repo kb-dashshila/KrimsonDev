@@ -105,7 +105,7 @@ export default function HeroImage() {
           style={{ transform: "translateZ(30px)" }}
         >
           <Image
-            src="/images/profile.png"
+            src={`${basePath}/images/profile.png`}
             alt="Profile"
             width={420}
             height={520}
